@@ -1666,7 +1666,6 @@ preset_keyboards:
       - {
           click: BackSpace,
           swipe_up: Candidate_switch1,
-          long_click: Color_switch,
           key_text_offset_y: 1,
           key_back_color: gnb,
           hilited_key_back_color: gnh,
@@ -1727,7 +1726,7 @@ preset_keyboards:
           click: Return,
           key_symbol_offset_x: 0,
           long_click: Menu,
-          swipe_up: Theme_settings,
+          swipe_up: Color_switch,
           key_back_color: hcb,
           key_text_color: hct,
           key_symbol_color: hcs,
