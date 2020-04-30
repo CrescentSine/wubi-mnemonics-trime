@@ -1589,7 +1589,7 @@ preset_keyboards:
         }
       - {
           click: l,
-          long_click: Menu,
+          long_click: Color_switch,
           swipe_up: "'",
           swipe_down: End,
           key_text_color: TEX,
@@ -1726,7 +1726,6 @@ preset_keyboards:
           click: Return,
           key_symbol_offset_x: 0,
           long_click: Menu,
-          swipe_up: Color_switch,
           key_back_color: hcb,
           key_text_color: hct,
           key_symbol_color: hcs,
