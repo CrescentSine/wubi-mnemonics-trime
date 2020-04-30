@@ -45,7 +45,6 @@ style:
   horizontal: false #水平模式
   horizontal_gap: *FJL #符号键盘列间距
   inline_preedit: input #嵌入模式：preview|composition|input|none
-  #inline_preedit: input #嵌入模式：preview|composition|input|none
   layout: #悬浮窗口位置
     position: fixed #位置：left|right|left_up|right_up|fixed|bottom_left|bottom_right|top_left|top_right(left、right需要Android5.0以上)
     min_length: 0 #候选窗口最小词长
@@ -1882,16 +1881,16 @@ preset_keyboards:
       "keys/@28/key_symbol_color": 0x00
       "keys/@30/hint":
       "keys/@34/hint":
-      "keys/@0/key_back_color":  wubi98/98_Q.png
-      "keys/@1/key_back_color":  wubi98/98_W.png
-      "keys/@2/key_back_color":  wubi98/98_E.png
-      "keys/@3/key_back_color":  wubi98/98_R.png
-      "keys/@4/key_back_color":  wubi98/98_T.png
-      "keys/@5/key_back_color":  wubi98/98_Y.png
-      "keys/@6/key_back_color":  wubi98/98_U.png
-      "keys/@7/key_back_color":  wubi98/98_I.png
-      "keys/@8/key_back_color":  wubi98/98_O.png
-      "keys/@9/key_back_color":  wubi98/98_P.png
+      "keys/@0/key_back_color": wubi98/98_Q.png
+      "keys/@1/key_back_color": wubi98/98_W.png
+      "keys/@2/key_back_color": wubi98/98_E.png
+      "keys/@3/key_back_color": wubi98/98_R.png
+      "keys/@4/key_back_color": wubi98/98_T.png
+      "keys/@5/key_back_color": wubi98/98_Y.png
+      "keys/@6/key_back_color": wubi98/98_U.png
+      "keys/@7/key_back_color": wubi98/98_I.png
+      "keys/@8/key_back_color": wubi98/98_O.png
+      "keys/@9/key_back_color": wubi98/98_P.png
       "keys/@11/key_back_color": wubi98/98_A.png
       "keys/@12/key_back_color": wubi98/98_S.png
       "keys/@13/key_back_color": wubi98/98_D.png
@@ -2419,7 +2418,7 @@ preset_keyboards:
       - { click: 7, key_back_color: bbb }
       - { click: 8, key_back_color: ccc }
       - { click: 9, key_back_color: aaa }
-      - { click: Return1, width: 19 } # TODO use tongwenfeng symbol keyboard
+      - { click: Keyboard_symbols, width: 19 }
       - { click: "/" }
       - { click: "=" }
       - { click: 0, key_back_color: aaa }
@@ -2453,7 +2452,7 @@ preset_keyboards:
       - { click: undo }
       - { click: Down }
       - { click: redo }
-      - { click: Return1, width: 19 } # TODO use tongwenfeng symbol keyboard
+      - { click: Keyboard_symbols, width: 19 }
       - { click: paste1 }
       - { click: Tab }
       - { click: space1 }
@@ -4580,8 +4579,213 @@ preset_keyboards:
     name: "音标2"
     width: 13.5
 
+  symbols:
+    author: "暖暖"
+    name: 各种符号
+    width: 12
+    # height: 39.5
+    ascii_mode: 0
+    keys:
+      # 同文风emoji键盘，后续看需要添加
+      # - {
+      #     label: "🙂",
+      #     click: Keyboard_bqrw1,
+      #     height: 26,
+      #     width: 10,
+      #     key_back_color: bgn,
+      #     key_text_color: gns,
+      #   }
+      # - {
+      #     label: "🌼",
+      #     click: Keyboard_bqhc1,
+      #     width: 10,
+      #     key_back_color: bgn,
+      #     key_text_color: gns,
+      #   }
+      # - {
+      #     label: "🎂",
+      #     click: Keyboard_bqpt1,
+      #     width: 10,
+      #     key_back_color: bgn,
+      #     key_text_color: gns,
+      #   }
+      # - {
+      #     label: "🚖",
+      #     click: Keyboard_bqlx1,
+      #     width: 10,
+      #     key_back_color: bgn,
+      #     key_text_color: gns,
+      #   }
+      # - {
+      #     label: "🎉",
+      #     click: Keyboard_bqhd1,
+      #     width: 10,
+      #     key_back_color: bgn,
+      #     key_text_color: gns,
+      #   }
+      # - {
+      #     label: "🔌",
+      #     click: Keyboard_bqkj1,
+      #     width: 10,
+      #     key_back_color: bgn,
+      #     key_text_color: gns,
+      #   }
+      # - {
+      #     label: "🔶",
+      #     click: Keyboard_bqqt1,
+      #     width: 10,
+      #     key_back_color: bgn,
+      #     key_text_color: gns,
+      #   }
+      # - {
+      #     label: "🇨🇳",
+      #     click: Keyboard_bqqz1,
+      #     width: 10,
+      #     key_back_color: bgn,
+      #     key_text_color: gns,
+      #   }
+      # - {
+      #     label: "#!?",
+      #     click: K_symbols10,
+      #     width: 10,
+      #     key_back_color: bgn,
+      #     key_text_color: gns,
+      #   }
+      # - {
+      #     label: "更多",
+      #     click: Keyboard_symbols,
+      #     width: 10,
+      #     key_text_size: "14",
+      #     key_back_color: benter,
+      #     key_text_color: tenter,
+      #   }
+
+      - { click: 符号, long_click: 一, key_text_size: "16" }
+      - { click: 电脑, long_click: 二, key_text_size: "16" }
+      - { click: 天气, long_click: 三, key_text_size: "16" }
+      - { click: 音乐, long_click: 四, key_text_size: "16" }
+      - { click: 单位, long_click: 五, key_text_size: "16" }
+      - {
+          click: 数学,
+          long_click: 分数,
+          key_text_size: "18",
+          symbol_text_size: "8",
+        }
+      - {
+          click: 八卦,
+          long_click: 易经,
+          key_text_size: "18",
+          symbol_text_size: "8",
+        }
+      - { click: space1, width: 16, key_back_color: gnb, key_text_color: gns }
+
+      - { click: 星号, long_click: 六, key_text_size: "16" }
+      - { click: 方块, long_click: 七, key_text_size: "16" }
+      - { click: 几何, long_click: 八, key_text_size: "16" }
+      - { click: 箭头, long_click: 九, key_text_size: "16" }
+      - { click: 货币, long_click: 十, key_text_size: "16" }
+      - {
+          click: 下标,
+          long_click: 上标,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - {
+          click: 天体,
+          long_click: 星座,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - { click: Return, width: 16, key_back_color: bgn, key_text_color: gns }
+
+      - { click: 标点, long_click: 零, key_text_size: "16" }
+      - {
+          click: 拼音,
+          long_click: 竖标点,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - {
+          click: 注音,
+          long_click: 偏旁,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - {
+          click: 韩文,
+          long_click: 表情,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - {
+          click: 假名,
+          long_click: 片假名,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - {
+          click: 麻将,
+          long_click: 骰子,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - {
+          click: 象棋,
+          long_click: 扑克,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - {
+          click: BackSpace,
+          composing: Escape,
+          width: 16,
+          key_back_color: hsb,
+          key_text_color: gns,
+        }
+
+      - {
+          click: 希腊,
+          long_click: 希腊大写,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - {
+          click: 罗马,
+          long_click: 罗马大写,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - {
+          click: 俄语,
+          long_click: 俄语大写,
+          key_text_size: "16",
+          symbol_text_size: "8",
+        }
+      - {
+          click: "",
+          composing: Left,
+          width: 16,
+          key_back_color: bgn,
+        }
+      - {
+          click: "",
+          composing: Right,
+          width: 16,
+          key_back_color: bgn,
+        }
+      - {
+          label: "123",
+          click: K_symbols123,
+          long_click: Mode_switch,
+          composing: Page_Up,
+          width: 16,
+          key_back_color: bgn,
+          key_text_color: gns,
+        }
+      - { click: K_back, long_click: Menu, composing: Page_Down, width: 16 }
+
 android_keys:
-  __include: trime:/android_keys  #导入trime.yaml中的android_keys
+  __include: trime:/android_keys #导入trime.yaml中的android_keys
 
 preset_keys:
   # 安卓
@@ -4597,7 +4801,6 @@ preset_keys:
       shift_lock: click,
     } # 英文状态一次锁定
   Return: { label: Enter, preview: "↩", send: Return }
-  Return1: { label: ↩, preview: "↩", send: Return }
   BackSpace: { label: ⌫, preview: "⌫", repeatable: true, send: BackSpace }
   space: { repeatable: false, preview: "␣", functional: false, send: space }
   space1:
@@ -4685,13 +4888,6 @@ preset_keys:
       send: Mode_switch,
       states: [中文, EN],
     }
-  Mode_switch1:
-    {
-      toggle: ascii_mode,
-      functional: false,
-      send: Mode_switch,
-      states: [中/en, cn/英],
-    }
   Zenkaku_Hankaku: { toggle: full_shape, send: Mode_switch, states: [◖, ●] }
   Zenkaku_Hankaku1:
     { toggle: full_shape, functional: false, send: Mode_switch, states: [◖, ●] }
@@ -4738,10 +4934,7 @@ preset_keys:
   # IME_next: { label: 下一输入法, send: LANGUAGE_SWITCH, select: .next } #直接切換到下一輸入法
   K_back: { label: 返回, send: Eisu_toggle, select: .last_lock }
   K_back_l: { label: Ⓑ 返回, send: Eisu_toggle, select: .last_lock }
-  K_default:
-    { label: 默认, functional: false, send: Eisu_toggle, select: .default }
-  K_default1:
-    { label: EN, functional: false, send: Eisu_toggle, select: .default }
+
   K_defaultMR:
     { label: ⌨, functional: false, send: Eisu_toggle, select: .default }
   K_noticeWubi86:
@@ -4916,3 +5109,54 @@ preset_keys:
   Theme_settings1: { label: ⛶, send: SETTINGS, option: "theme" }
   Theme_settings2: { label: 主题, send: SETTINGS, option: "theme" }
   Schema_settings: { label: 方案, send: SETTINGS, option: "schema" }
+
+  # 符号
+  Keyboard_symbols: { label: 更多, send: Eisu_toggle, select: symbols }
+  符号: { text: "{Escape}/fh", label: 符号, functional: false }
+  电脑: { text: "{Escape}/dn", label: 电脑, functional: false }
+  象棋: { text: "{Escape}/xq", label: 象棋, functional: false }
+  麻将: { text: "{Escape}/mj", label: 麻将, functional: false }
+  骰子: { text: "{Escape}/sz", label: 骰子, functional: false }
+  扑克: { text: "{Escape}/pk", label: 扑克, functional: false }
+  天气: { text: "{Escape}/tq", label: 天气, functional: false }
+  音乐: { text: "{Escape}/yy", label: 音乐, functional: false }
+  八卦: { text: "{Escape}/bg", label: 八卦, functional: false }
+  易经: { text: "{Escape}/lssg", label: 易经, functional: false }
+  天体: { text: "{Escape}/tt", label: 天体, functional: false }
+  星座: { text: "{Escape}/xz", label: 星座, functional: false }
+  星号: { text: "{Escape}/xh", label: 星号, functional: false }
+  方块: { text: "{Escape}/fk", label: 方块, functional: false }
+  几何: { text: "{Escape}/jh", label: 几何, functional: false }
+  箭头: { text: "{Escape}/jt", label: 箭头, functional: false }
+  数学: { text: "{Escape}/sx", label: 数学, functional: false }
+  上标: { text: "{Escape}/sb", label: 上标, functional: false }
+  下标: { text: "{Escape}/xb", label: 下标, functional: false }
+  单位: { text: "{Escape}/dw", label: 单位, functional: false }
+  货币: { text: "{Escape}/hb", label: 货币, functional: false }
+  拼音: { text: "{Escape}/py", label: 拼音, functional: false }
+  注音: { text: "{Escape}/zy", label: 注音, functional: false }
+  假名: { text: "{Escape}/jm", label: 假名, functional: false }
+  片假名: { text: "{Escape}/pjm", label: 片假名, functional: false }
+  韩文: { text: "{Escape}/hw", label: 韩文, functional: false }
+  希腊: { text: "{Escape}/xl", label: 希腊, functional: false }
+  希腊大写: { text: "{Escape}/xld", label: 大写, functional: false }
+  罗马: { text: "{Escape}/lm", label: 罗马, functional: false }
+  罗马大写: { text: "{Escape}/lmd", label: 大写, functional: false }
+  俄语: { text: "{Escape}/ey", label: 俄语, functional: false }
+  俄语大写: { text: "{Escape}/eyd", label: 大写, functional: false }
+  表情: { text: "{Escape}/bq", label: 😁 }
+  一: { text: "{Escape}/1", label: 1 }
+  二: { text: "{Escape}/2", label: 2 }
+  三: { text: "{Escape}/3", label: 3 }
+  四: { text: "{Escape}/4", label: 4 }
+  五: { text: "{Escape}/5", label: 5 }
+  六: { text: "{Escape}/6", label: 6 }
+  七: { text: "{Escape}/7", label: 7 }
+  八: { text: "{Escape}/8", label: 8 }
+  九: { text: "{Escape}/9", label: 9 }
+  零: { text: "{Escape}/0", label: 0 }
+  十: { text: "{Escape}/10", label: 10 }
+  分数: { text: "{Escape}/fs", label: 分数, functional: false }
+  标点: { text: "{Escape}/bd", label: 标点, functional: false }
+  偏旁: { text: "{Escape}/pp", label: 偏旁, functional: false }
+  竖标点: { text: "{Escape}/bdz", label: 竖标, functional: false }
